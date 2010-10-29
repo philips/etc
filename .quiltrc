@@ -1,0 +1,8 @@
+QUILT_DIFF_OPTS="-p --show-c-function"
+QUILT_REFRESH_ARGS="--no-timestamps --diffstat --strip --no-index --sort -p1 -p ab"
+QUILT_SENDMAIL="$HOME/bin/msmtp-enqueue.sh"
+
+# Options to pass to commands (QUILT_${COMMAND}_ARGS)
+QUILT_PUSH_ARGS="--color=auto" 
+QUILT_DIFF_ARGS="--color=auto" 
+QUILT_PATCH_OPTS="--backup -F0" 
