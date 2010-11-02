@@ -17,3 +17,16 @@ ab acki Acked-by-by: Brandon Philips <bphilips@suse.de>
 " Detecting annoying extra whitespace
 autocmd Syntax * syn match ExtraWhitespace /\s\+$\| \+\ze\t/
 highlight ExtraWhitespace ctermbg=red guibg=red
+
+" Man pages
+runtime ftplugin/man.vim
+
+" I suck at typing
+ab teh the
+
+" Cheers, Brandon
+ab chbr Cheers,<return><return><tab>Brandon
+
+" highlight search
+set hls
+
