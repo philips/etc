@@ -13,5 +13,9 @@ export DISABLE_AUTO_UPDATE="true"
 
 plugins=(git)
 
+alias q="quilt"
+alias iosc="osc -A https://api.suse.de"
+alias fmail="msmtp-listqueue.sh; sleep 1 && msmtp-runqueue.sh"
+
 source $ZSH/oh-my-zsh.sh
 export PATH=$PATH:/home/philips/ghar/bin
