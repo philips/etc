@@ -1,0 +1,7 @@
+Basic environment for me including:
+
+* lbdb - for interfacing with my addressbook if installed
+* vimrc - my editor of choice
+* quiltrc - sane defaults for working with quilt
+* zshrc - basic oh-my-zsh setup
+  (depends on git://github.com/robbyrussell/oh-my-zsh.git)
