@@ -1,6 +1,12 @@
 # Host specific changes
 [ -e $HOME/.zshrc.host ] && source $HOME/.zshrc.host
 
+[ -e $HOME/ghar/bin ] && export PATH=$PATH:$HOME/ghar/bin
+[ -e $HOME/.cabal/bin ] && export PATH=$HOME/.cabal/bin:$PATH
+
+# Maybe we are doing python here
+[ -e /usr/local/bin/virtualenvwrapper.sh ] && source /usr/local/bin/virtualenvwrapper.sh
+
 # Path to your oh-my-zsh configuration.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -18,4 +24,3 @@ alias iosc="osc -A https://api.suse.de"
 alias fmail="msmtp-listqueue.sh; sleep 1 && msmtp-runqueue.sh"
 
 source $ZSH/oh-my-zsh.sh
-export PATH=$PATH:/home/philips/ghar/bin
