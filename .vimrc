@@ -1,5 +1,10 @@
+set laststatus=2
+set statusline=%<%f\ %h%w%m%r%y%=L:%l/%L\ (%p%%)\ C:%c%V\ B:%o\ F:%{foldlevel('.')} 
+
 " Python
 au FileType python setl autoindent tabstop=4 expandtab shiftwidth=4 softtabstop=4
+au FileType html setl autoindent tabstop=2 expandtab shiftwidth=2 softtabstop=2
+au FileType php setl autoindent tabstop=2 expandtab shiftwidth=2 softtabstop=2
 
 " Vala
 autocmd BufRead *.vala set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
