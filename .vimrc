@@ -1,3 +1,7 @@
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
+syntax on
 set laststatus=2
 set statusline=%<%f\ %h%w%m%r%y%=L:%l/%L\ (%p%%)\ C:%c%V\ B:%o\ F:%{foldlevel('.')} 
 
