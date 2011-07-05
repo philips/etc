@@ -6,6 +6,7 @@
 [ -s $HOME/.rvm/scripts/rvm ] && source $HOME/.rvm/scripts/rvm
 
 export PATH=$PATH:~/bin/
+export EDITOR=vim
 
 # Maybe we are doing python here
 [ -e /usr/local/bin/virtualenvwrapper.sh ] && source /usr/local/bin/virtualenvwrapper.sh
