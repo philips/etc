@@ -105,6 +105,7 @@ set spellsuggest=fast,20
 set timeoutlen=500
 set nostartofline          " don't jump to the start of line when scrolling
 set guitablabel=%n/\ %t\ %M
+set modelines=1
 
 " Highlight trailing spaces
 set list listchars=trail:.,tab:>.
