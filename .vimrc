@@ -1,6 +1,9 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+"http://nvie.com/posts/how-i-boosted-my-vim/
+set hidden
+
 syntax on
 set laststatus=2
 set statusline=%<%f\ %h%w%m%r%y%=L:%l/%L\ (%p%%)\ C:%c%V\ B:%o\ F:%{foldlevel('.')} 
