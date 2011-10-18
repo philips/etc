@@ -63,6 +63,7 @@ endif
 
 " If possible, try to use a narrow number column.
 if v:version >= 700
+    set undodir=~/.vimundo
     try
         setlocal numberwidth=3
     catch
