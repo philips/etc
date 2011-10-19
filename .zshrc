@@ -24,6 +24,8 @@ export DISABLE_AUTO_UPDATE="true"
 
 plugins=(git)
 
+alias knife="nocorrect knife"
+
 alias q="quilt"
 alias iosc="osc -A https://api.suse.de"
 alias fmail="msmtp-listqueue.sh; sleep 1 && msmtp-runqueue.sh"
