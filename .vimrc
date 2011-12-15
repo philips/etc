@@ -14,6 +14,7 @@ au FileType ruby setl autoindent tabstop=2 expandtab shiftwidth=2 softtabstop=2
 au FileType html setl autoindent tabstop=2 expandtab shiftwidth=2 softtabstop=2
 au FileType htmldjango setl autoindent tabstop=2 expandtab shiftwidth=2 softtabstop=2
 au FileType php setl autoindent tabstop=2 expandtab shiftwidth=2 softtabstop=2
+au FileType javascript setl autoindent tabstop=2 expandtab shiftwidth=2 softtabstop=2
 
 " Vala
 autocmd BufRead *.vala set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
