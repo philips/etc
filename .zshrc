@@ -5,6 +5,7 @@
 [ -e $HOME/.gem/ruby/1.8/bin ] && export PATH=$HOME/.gem/ruby/1.8/bin:$PATH
 [ -s $HOME/.rvm/scripts/rvm ] && source $HOME/.rvm/scripts/rvm
 [ -e $HOME/.rbenv ] && export PATH=$HOME/.rbenv/bin:$PATH && eval "$(rbenv init -)"
+[ -e $HOME/.luvm ] && source $HOME/.luvm/luvm.sh
 
 export PATH=$PATH:~/bin/
 export EDITOR=vim
