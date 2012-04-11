@@ -11,6 +11,7 @@ Bundle 'gmarik/vundle'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'wincent/Command-T.git'
 Bundle 'scrooloose/nerdtree'
+Bundle 'Lokaltog/vim-powerline'
 
 filetype plugin indent on      " required!
 
