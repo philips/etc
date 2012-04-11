@@ -10,6 +10,9 @@ Bundle 'gmarik/vundle'
 
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'wincent/Command-T.git'
+Bundle 'scrooloose/nerdtree'
+
+filetype plugin indent on      " required!
 
 "http://nvie.com/posts/how-i-boosted-my-vim/
 set hidden
