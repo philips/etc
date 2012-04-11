@@ -1,5 +1,15 @@
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+set nocompatible               " be iMproved
+filetype off                   " required!
+
+set rtp+=~/.vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'wincent/Command-T.git'
 
 "http://nvie.com/posts/how-i-boosted-my-vim/
 set hidden
