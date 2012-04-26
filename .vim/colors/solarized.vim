@@ -1,1 +1,0 @@
-/Users/philips/trees/solarized/vim-colors-solarized/colors/solarized.vim

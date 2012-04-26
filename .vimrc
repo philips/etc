@@ -12,6 +12,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'wincent/Command-T.git'
 Bundle 'The-NERD-tree'
 Bundle 'Lokaltog/vim-powerline'
+Bundle 'altercation/vim-colors-solarized'
 
 filetype plugin indent on      " required!
 
