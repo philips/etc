@@ -74,6 +74,8 @@ endfunction
 
 set autoindent
 
+set dir=~/.vimswap//,/var/tmp//,/tmp//,.
+
 " for vim version greater than 7.3
 if v:version >= 703
     try
