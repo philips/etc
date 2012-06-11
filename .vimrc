@@ -12,6 +12,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'wincent/Command-T.git'
 Bundle 'scrooloose/nerdtree'
 Bundle 'Lokaltog/vim-powerline'
+Bundle 'tpope/vim-fugitive'
 
 filetype plugin indent on      " required!
 
@@ -29,6 +30,7 @@ au FileType html setl autoindent tabstop=2 expandtab shiftwidth=2 softtabstop=2
 au FileType htmldjango setl autoindent tabstop=2 expandtab shiftwidth=2 softtabstop=2
 au FileType php setl autoindent tabstop=2 expandtab shiftwidth=2 softtabstop=2
 au FileType javascript setl autoindent tabstop=2 expandtab shiftwidth=2 softtabstop=2
+au FileType lua setl autoindent tabstop=2 expandtab shiftwidth=2 softtabstop=2
 
 " Vala
 autocmd BufRead *.vala set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
