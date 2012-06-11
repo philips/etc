@@ -10,16 +10,20 @@ Bundle 'gmarik/vundle'
 
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'wincent/Command-T.git'
-Bundle 'scrooloose/nerdtree'
+Bundle 'The-NERD-tree'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'tpope/vim-fugitive'
+
+syntax on
+set background=light
+Bundle 'altercation/vim-colors-solarized'
+
 
 filetype plugin indent on      " required!
 
 "http://nvie.com/posts/how-i-boosted-my-vim/
 set hidden
 
-syntax on
 set laststatus=2
 set statusline=%<%f\ %h%w%m%r%y%=L:%l/%L\ (%p%%)\ C:%c%V\ B:%o\ F:%{foldlevel('.')} 
 
@@ -70,7 +74,8 @@ EOF
 endfunction
 
 set autoindent
-colorscheme solarized
+
+set dir=~/.vimswap//,/var/tmp//,/tmp//,.
 
 " for vim version greater than 7.3
 if v:version >= 703
