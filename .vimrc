@@ -4,20 +4,24 @@ filetype off                   " required!
 set rtp+=~/.vundle/
 call vundle#rc()
 
+let mapleader = ","
+
 " let Vundle manage Vundle
 " required! 
 Bundle 'gmarik/vundle'
 
 Bundle 'kchmck/vim-coffee-script'
-Bundle 'wincent/Command-T.git'
-Bundle 'The-NERD-tree'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'tpope/vim-fugitive'
+Bundle 'L9'
+Bundle 'FuzzyFinder'
+
+map <leader>f :FufFile **/<CR>
+map <leader>b :FufBuffer<CR>
 
 syntax on
 set background=light
 Bundle 'altercation/vim-colors-solarized'
-
 
 filetype plugin indent on      " required!
 
@@ -57,8 +61,6 @@ ab chbr Cheers,<return><return><tab>Brandon
 
 " highlight search
 set hls
-
-let mapleader = ","
 
 " Function to activate a virtualenv in the embedded interpreter for
 " omnicomplete and other things like that.
@@ -160,22 +162,8 @@ if has("gui_running") && v:version >= 700
     set cursorline
 end
 
-" Nerd tree
-map <leader>n :NERDTreeClose<CR>:NERDTreeToggle<cr>
-map <leader>m :NERDTreeClose<CR>:NERDTreeFind<cr>
-map <leader>N :NERDTreeClose<CR>
-
-let g:NERDTreeChDirMode = 2
-let g:NERDTreeBookmarksFile=expand("$HOME/.vim/NERDTreeBookmarks")
-let g:NERDTreeShowBookmarks = 1 "Show bookmarks
-let g:NERDTreeShowFiles = 1 "Show Hidden files
-let g:NERDTreeShowHidden = 1
-let g:NERDTreeHighlightCursorLine = 1
-let g:NERDTreeMouseMode = 2
-
 " Strip leading whitespace
 nnoremap <leader>s :%s/\s\+$//<cr>:let @/=''<CR>
-
 
 " Line numbers
 autocmd BufEnter * :call <SID>WindowWidth()
