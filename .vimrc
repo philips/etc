@@ -1,6 +1,8 @@
 set nocompatible               " be iMproved
 filetype off                   " required!
 
+syntax on
+
 set rtp+=~/.vundle/
 call vundle#rc()
 
@@ -10,18 +12,28 @@ let mapleader = ","
 " required! 
 Bundle 'gmarik/vundle'
 
+" ledger files
+Bundle 'philips/vim-ledger'
+au BufNewFile,BufRead journal,*.ldg,*.ledger setf ledger
+" I don't want your code folding
+au BufNewFile,BufRead journal,*.ldg,*.ledger set foldlevel=20
+
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'tpope/vim-fugitive'
-Bundle 'L9'
-Bundle 'FuzzyFinder'
+Bundle 'kien/ctrlp.vim'
 
-map <leader>f :FufFile **/<CR>
-map <leader>b :FufBuffer<CR>
+" Use find on unix. Sooo fast even for Kernel trees.
+if has("unix")
+  let g:ctrlp_user_command = "find %s -path '*.git*' -prune -o -type f"
+endif
 
-syntax on
-set background=light
+nnoremap <leader>b :CtrlPBuffer<CR>
+nnoremap <leader><leader> :CtrlP<CR>
+
 Bundle 'altercation/vim-colors-solarized'
+set background=dark
+colorscheme solarized
 
 filetype plugin indent on      " required!
 
@@ -31,10 +43,10 @@ set hidden
 set laststatus=2
 set statusline=%<%f\ %h%w%m%r%y%=L:%l/%L\ (%p%%)\ C:%c%V\ B:%o\ F:%{foldlevel('.')} 
 
-" Python
 au FileType python setl autoindent tabstop=4 expandtab shiftwidth=4 softtabstop=4
 au FileType ruby setl autoindent tabstop=2 expandtab shiftwidth=2 softtabstop=2
 au FileType html setl autoindent tabstop=2 expandtab shiftwidth=2 softtabstop=2
+au FileType xml setl autoindent tabstop=2 expandtab shiftwidth=2 softtabstop=2
 au FileType htmldjango setl autoindent tabstop=2 expandtab shiftwidth=2 softtabstop=2
 au FileType php setl autoindent tabstop=2 expandtab shiftwidth=2 softtabstop=2
 au FileType javascript setl autoindent tabstop=2 expandtab shiftwidth=2 softtabstop=2
