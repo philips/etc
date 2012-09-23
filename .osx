@@ -1,5 +1,10 @@
 # From https://github.com/mathiasbynens/dotfiles/blob/master/.osx
 
+# Faster exposé animations
+defaults write com.apple.dock expose-animation-duration -float 0.13; killall Dock
+defaults write com.apple.TextEdit NSQuitAlwaysKeepsWindows -bool false
+defaults write com.apple.Preview NSQuitAlwaysKeepsWindows -bool false
+
 # Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
@@ -174,7 +179,7 @@ defaults write com.apple.loginwindow LoginwindowLaunchesRelaunchApps -bool false
 defaults write com.apple.dashboard devmode -bool true
 
 # Reset Launchpad
-[ -e ~/Library/Application\ Support/Dock/*.db ] && rm ~/Library/Application\ Support/Dock/*.db
+#[ -e ~/Library/Application\ Support/Dock/*.db ] && rm ~/Library/Application\ Support/Dock/*.db
 
 # Show the ~/Library folder
 chflags nohidden ~/Library
