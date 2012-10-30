@@ -32,7 +32,7 @@ nnoremap <leader>b :CtrlPBuffer<CR>
 nnoremap <leader><leader> :CtrlP<CR>
 
 Bundle 'altercation/vim-colors-solarized'
-set background=dark
+set background=light
 colorscheme solarized
 
 filetype plugin indent on      " required!
