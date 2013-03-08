@@ -22,6 +22,8 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'tpope/vim-fugitive'
 Bundle 'kien/ctrlp.vim'
+Bundle 'digitaltoad/vim-jade'
+autocmd BufNewFile,BufReadPost *.jade setf jade
 
 " Use find on unix. Sooo fast even for Kernel trees.
 if has("unix")
@@ -30,10 +32,6 @@ endif
 
 nnoremap <leader>b :CtrlPBuffer<CR>
 nnoremap <leader><leader> :CtrlP<CR>
-
-Bundle 'altercation/vim-colors-solarized'
-set background=light
-colorscheme solarized
 
 filetype plugin indent on      " required!
 
@@ -46,11 +44,14 @@ set statusline=%<%f\ %h%w%m%r%y%=L:%l/%L\ (%p%%)\ C:%c%V\ B:%o\ F:%{foldlevel('.
 au FileType python setl autoindent tabstop=4 expandtab shiftwidth=4 softtabstop=4
 au FileType ruby setl autoindent tabstop=2 expandtab shiftwidth=2 softtabstop=2
 au FileType html setl autoindent tabstop=2 expandtab shiftwidth=2 softtabstop=2
+au FileType hbr setl autoindent tabstop=2 expandtab shiftwidth=2 softtabstop=2
+au FileType hbt setl autoindent tabstop=2 expandtab shiftwidth=2 softtabstop=2
 au FileType xml setl autoindent tabstop=2 expandtab shiftwidth=2 softtabstop=2
 au FileType htmldjango setl autoindent tabstop=2 expandtab shiftwidth=2 softtabstop=2
 au FileType php setl autoindent tabstop=2 expandtab shiftwidth=2 softtabstop=2
 au FileType javascript setl autoindent tabstop=2 expandtab shiftwidth=2 softtabstop=2
 au FileType lua setl autoindent tabstop=2 expandtab shiftwidth=2 softtabstop=2
+au FileType jade setl autoindent tabstop=2 expandtab shiftwidth=2 softtabstop=2
 
 " Vala
 autocmd BufRead *.vala set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
