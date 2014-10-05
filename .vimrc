@@ -12,6 +12,13 @@ let mapleader = ","
 " required! 
 Bundle 'gmarik/vundle'
 
+" Dash
+Bundle 'rizzatti/funcoo.vim'
+Bundle 'rizzatti/dash.vim'
+Bundle 'git@bitbucket.org:kisom/eink.vim.git'
+hi Normal       cterm=NONE          ctermfg=235
+color eink
+
 " ledger files
 Bundle 'philips/vim-ledger'
 au BufNewFile,BufRead journal,*.ldg,*.ledger setf ledger
@@ -40,6 +47,8 @@ set hidden
 
 set laststatus=2
 set statusline=%<%f\ %h%w%m%r%y%=L:%l/%L\ (%p%%)\ C:%c%V\ B:%o\ F:%{foldlevel('.')} 
+
+autocmd BufNewFile,BufRead *.md,*.markdown,*.mdown,*.mkd,*.mkdn set filetype=markdown
 
 au FileType python setl autoindent tabstop=4 expandtab shiftwidth=4 softtabstop=4
 au FileType ruby setl autoindent tabstop=2 expandtab shiftwidth=2 softtabstop=2
