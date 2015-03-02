@@ -30,6 +30,7 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'tpope/vim-fugitive'
 Bundle 'kien/ctrlp.vim'
 Bundle 'digitaltoad/vim-jade'
+Bundle 'fatih/vim-go'
 autocmd BufNewFile,BufReadPost *.jade setf jade
 
 " Use find on unix. Sooo fast even for Kernel trees.
