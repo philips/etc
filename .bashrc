@@ -6,6 +6,8 @@ export PATH=$PATH:/usr/local/go/bin
 export GOPATH=$HOME
 export EDITOR=vim
 
+export PATH=$PATH:$GOPATH/bin
+
 case $TERM in
 	xterm*)
 		PS1="\[\033]0;\h: \w\007\]\\$ "
