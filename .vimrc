@@ -15,7 +15,7 @@ Bundle 'gmarik/vundle'
 " Dash
 Bundle 'rizzatti/funcoo.vim'
 Bundle 'rizzatti/dash.vim'
-Bundle 'git@bitbucket.org:kisom/eink.vim.git'
+Bundle 'https://bitbucket.org/kisom/eink.vim.git'
 hi Normal       cterm=NONE          ctermfg=235
 color eink
 
