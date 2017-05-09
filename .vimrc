@@ -1,6 +1,6 @@
 set nocompatible               " be iMproved
 filetype off                   " required!
-
+set clipboard+=unnamedplus
 syntax on
 
 set rtp+=~/.vundle/
@@ -157,6 +157,8 @@ set timeoutlen=500
 set nostartofline          " don't jump to the start of line when scrolling
 set guitablabel=%n/\ %t\ %M
 set modelines=1
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
 
 " Highlight trailing spaces
 set list listchars=trail:.,tab:>.
