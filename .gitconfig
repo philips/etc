@@ -2,7 +2,10 @@
 [user]
 	name = Brandon Philips
 	email = brandon.philips@coreos.com
+	signingkey = D5D7D3AFD79749E7
 
+[gpg]
+	program = gpg2
 [alias]
 	copr = "!f() { git fetch origin pull/$1/head:pr-$1; git checkout pr-$1;}; f"
 
@@ -12,3 +15,7 @@
 	        fsckobjects = true
 [receive]
 	        fsckObjects = true
+
+
+[push]
+	default = simple

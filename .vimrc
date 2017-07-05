@@ -3,14 +3,16 @@ filetype off                   " required!
 set clipboard+=unnamedplus
 syntax on
 
-set rtp+=~/.vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin()
+
 
 let mapleader = ","
 
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
+Bundle 'VundleVim/Vundle.vim'
 
 " Dash
 Bundle 'rizzatti/funcoo.vim'
@@ -31,6 +33,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'kien/ctrlp.vim'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'fatih/vim-go'
+call vundle#end()            " required
 autocmd BufNewFile,BufReadPost *.jade setf jade
 
 " Use find on unix. Sooo fast even for Kernel trees.
