@@ -1,4 +1,5 @@
 export PATH=$PATH:$HOME/bin
+export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/ghar/bin
 export PATH=$PATH:$HOME/google-cloud-sdk/bin
 export PATH=$PATH:/usr/local/bin
@@ -7,6 +8,16 @@ export GOPATH=$HOME
 export EDITOR=vim
 
 export PATH=$PATH:$GOPATH/bin
+
+# When on Google Cloud Shell
+if [ -f "/google/devshell/bashrc.google" ]; then
+  source "/google/devshell/bashrc.google"
+fi
+
+if [ -f "$HOME/bashrc.local" ]; then
+  source "$HOME/bashrc.local"
+fi
+
 
 case $TERM in
 	xterm*)
@@ -24,3 +35,10 @@ shopt -s histappend                      # append to history, don't overwrite it
 
 # Save and reload the history after each command finishes
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+
+# If not running interactively, return
+case $- in
+    *i*) ;;
+      *) return;;
+esac
+
