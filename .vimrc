@@ -17,9 +17,9 @@ Bundle 'VundleVim/Vundle.vim'
 " Dash
 Bundle 'rizzatti/funcoo.vim'
 Bundle 'rizzatti/dash.vim'
-Bundle 'philips/eink.vim'
+Bundle 'philips/meink.vim'
 hi Normal       cterm=NONE          ctermfg=235
-color eink
+color meink
 
 " ledger files
 Bundle 'philips/vim-ledger'
@@ -27,11 +27,9 @@ au BufNewFile,BufRead journal,*.ldg,*.ledger setf ledger
 " I don't want your code folding
 au BufNewFile,BufRead journal,*.ldg,*.ledger set foldlevel=20
 
-Bundle 'kchmck/vim-coffee-script'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'tpope/vim-fugitive'
 Bundle 'kien/ctrlp.vim'
-Bundle 'digitaltoad/vim-jade'
 Bundle 'fatih/vim-go'
 call vundle#end()            " required
 autocmd BufNewFile,BufReadPost *.jade setf jade
