@@ -19,7 +19,6 @@ Bundle 'rizzatti/funcoo.vim'
 Bundle 'rizzatti/dash.vim'
 Bundle 'philips/meink.vim'
 hi Normal       cterm=NONE          ctermfg=235
-color meink
 
 " ledger files
 Bundle 'philips/vim-ledger'
@@ -32,7 +31,9 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'kien/ctrlp.vim'
 Bundle 'fatih/vim-go'
 call vundle#end()            " required
-autocmd BufNewFile,BufReadPost *.jade setf jade
+
+
+color meink
 
 " Use find on unix. Sooo fast even for Kernel trees.
 if has("unix")
@@ -85,19 +86,6 @@ ab chbr Cheers,<return><return><tab>Brandon
 
 " highlight search
 set hls
-
-" Function to activate a virtualenv in the embedded interpreter for
-" omnicomplete and other things like that.
-function LoadVirtualEnv(path)
-    let activate_this = a:path . '/bin/activate_this.py'
-    if getftype(a:path) == "dir" && filereadable(activate_this)
-        python << EOF
-import vim
-activate_this = vim.eval('l:activate_this')
-execfile(activate_this, dict(__file__=activate_this))
-EOF
-    endif
-endfunction
 
 set autoindent
 
