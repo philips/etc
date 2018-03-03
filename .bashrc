@@ -14,8 +14,8 @@ if [ -f "/google/devshell/bashrc.google" ]; then
   source "/google/devshell/bashrc.google"
 fi
 
-if [ -f "$HOME/bashrc.local" ]; then
-  source "$HOME/bashrc.local"
+if [ -f "$HOME/.bashrc.local" ]; then
+  source "$HOME/.bashrc.local"
 fi
 
 
