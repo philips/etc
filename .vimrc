@@ -33,6 +33,7 @@ Bundle 'fatih/vim-go'
 call vundle#end()            " required
 
 
+set background=light
 color meink
 
 " Use find on unix. Sooo fast even for Kernel trees.
