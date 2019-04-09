@@ -4,10 +4,9 @@ export PATH=$PATH:$HOME/ghar/bin
 export PATH=$PATH:$HOME/google-cloud-sdk/bin
 export PATH=$PATH:/usr/local/bin
 export PATH=$PATH:/usr/local/go/bin
-export GOPATH=$HOME
 export EDITOR=vim
 
-export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$HOME/bin
 
 # When on Google Cloud Shell
 if [ -f "/google/devshell/bashrc.google" ]; then
