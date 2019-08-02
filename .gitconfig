@@ -1,7 +1,7 @@
 # This is Git's per-user configuration file.
 [user]
 	name = Brandon Philips
-	email = brandon.philips@coreos.com
+	email = brandon@ifup.org
 	signingkey = D5D7D3AFD79749E7
 
 [gpg]
@@ -19,3 +19,5 @@
 
 [push]
 	default = simple
+[commit]
+	gpgsign = true
