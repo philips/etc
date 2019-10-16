@@ -4,6 +4,7 @@ export PATH=$PATH:$HOME/ghar/bin
 export PATH=$PATH:$HOME/google-cloud-sdk/bin
 export PATH=$PATH:/usr/local/bin
 export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$HOME/go/bin
 export EDITOR=vim
 
 export PATH=$PATH:$HOME/bin
