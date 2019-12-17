@@ -42,3 +42,4 @@ case $- in
       *) return;;
 esac
 
+alias pass-exportify-backup='for i in *.csv; do n=$(basename  $i .csv); pass insert -m spotify/$n < $i ; done'
