@@ -5,6 +5,9 @@ set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
 
+" fix q in nvim https://github.com/neovim/neovim/issues/6403
+set guicursor=
+
 let mapleader = ","
 
 " let Vundle manage Vundle
