@@ -2,10 +2,7 @@
 [user]
 	name = Brandon Philips
 	email = brandon@ifup.org
-	signingkey = D5D7D3AFD79749E7
 
-[gpg]
-	program = gpg2
 [alias]
 	copr = "!f() { git fetch origin pull/$1/head:pr-$1; git checkout pr-$1;}; f"
 
@@ -20,4 +17,3 @@
 [push]
 	default = simple
 [commit]
-	gpgsign = true
