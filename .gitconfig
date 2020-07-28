@@ -17,3 +17,5 @@
 [push]
 	default = simple
 [commit]
+[init]
+	defaultBranch = main
