@@ -44,3 +44,5 @@ esac
 
 alias pass-exportify-backup='for i in *.csv; do n=$(basename  $i .csv); pass insert -m spotify/$n < $i ; done'
 alias journal='pass edit journal/$(date +%Y-%m-%d)'
+alias shellstop='gcloud compute instances stop shell --project ifup-shell-2 --zone us-central1-a'
+alias shellstart='gcloud compute instances start shell --project ifup-shell-2 --zone us-central1-a'
