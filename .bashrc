@@ -9,6 +9,8 @@ export EDITOR=vim
 
 export PATH=$PATH:$HOME/bin
 
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 # When on Google Cloud Shell
 if [ -f "/google/devshell/bashrc.google" ]; then
   source "/google/devshell/bashrc.google"
