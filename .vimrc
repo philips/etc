@@ -3,24 +3,23 @@ syntax on
 
 set rtp+=~/.vim/bundle/Vundle.vim
 
-call vundle#begin()
+call plug#begin()
 
 " fix q in nvim https://github.com/neovim/neovim/issues/6403
 set guicursor=
 
 let mapleader = ","
 
-" let Vundle manage Vundle
-" required! 
-Bundle 'VundleVim/Vundle.vim'
-
 " Dash
-Bundle 'philips/meink.vim'
+Plug 'philips/meink.vim'
 hi Normal       cterm=NONE          ctermfg=235
 
-Bundle 'kien/ctrlp.vim'
-Bundle 'fatih/vim-go'
-call vundle#end()            " required
+Plug 'kien/ctrlp.vim'
+Plug 'fatih/vim-go'
+
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+call plug#end()            " required
 
 set background=light
 color meink
