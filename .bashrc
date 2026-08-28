@@ -25,7 +25,7 @@ fi
 if [ $USER = "philips" ]; then 
   export PS1="$ "
 else
-  export $PS1="$USER $"
+  export PS1="$USER $"
 fi
 
 export HISTCONTROL=ignoredups:erasedups  # no duplicate entries
