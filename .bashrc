@@ -22,14 +22,11 @@ if [ -f "$HOME/.bashrc.local" ]; then
 fi
 
 
-case $TERM in
-	xterm*)
-		PS1="\[\033]0;\h: \w\007\]\\$ "
-		;;
-	*)
-		export PS1="$ "
-		;;
-esac
+if [ $USER = "philips" ]; then 
+  export PS1="$ "
+else
+  export $PS1="$USER $"
+fi
 
 export HISTCONTROL=ignoredups:erasedups  # no duplicate entries
 export HISTSIZE=100000                   # big big history
