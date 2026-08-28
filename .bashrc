@@ -6,7 +6,7 @@ export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/go/bin
 export EDITOR=nvim
 
-alis vim=nvim
+alias vim=nvim
 
 export PATH=$PATH:$HOME/bin
 
