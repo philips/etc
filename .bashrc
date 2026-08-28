@@ -1,11 +1,12 @@
 export PATH=$PATH:$HOME/bin
-export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/ghar/bin
-export PATH=$PATH:$HOME/google-cloud-sdk/bin
 export PATH=$PATH:/usr/local/bin
 export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/go/bin
-export EDITOR=vim
+export EDITOR=nvim
+
+alis vim=nvim
 
 export PATH=$PATH:$HOME/bin
 
@@ -46,8 +47,3 @@ case $- in
     *i*) ;;
       *) return;;
 esac
-
-alias pass-exportify-backup='for i in *.csv; do n=$(basename  $i .csv); pass insert -m spotify/$n < $i ; done'
-alias journal='pass edit journal/$(date +%Y-%m-%d)'
-alias shellstop='gcloud compute instances stop shell --project ifup-shell-2 --zone us-central1-a'
-alias shellstart='gcloud compute instances start shell --project ifup-shell-2 --zone us-central1-a'
